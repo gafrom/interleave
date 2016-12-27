@@ -1,2 +1,14 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
+
+<button class='btn'>Launch interleaving</button>
+
+<ul>
+  <% 20.times do |n| %>
+    <li data-id=<%= n %>>
+      <div class='li-content'>
+        <%= "Line number #{n}" %>
+      </div>
+    </li>
+  <% end %>
+</ul>
